@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                echo "Hello there: ${org.jenkinsci.plugins.workflow.cps.EnvActionImpl.class.getMethod('getOverriddenEnvironment').invoke(env)}"
+                def branch = sh(returnStdout: true, script: 'git rev-parse --abbrev-ref HEAD').trim()
+                echo "Hello there, you're running on branch $branch"
             }
         }
     }
