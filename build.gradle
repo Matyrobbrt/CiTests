@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+java.toolchain {
+    languageVersion = JavaLanguageVersion.of(17)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy:4.0.5'
+}
