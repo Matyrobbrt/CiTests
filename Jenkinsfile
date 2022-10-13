@@ -12,7 +12,7 @@ pipeline {
         stage('tag_stuff') {
             when { tag '*' }
             steps {
-                echo "Hello there, you're running on branch ${env.BRANCH_NAME}"
+                echo "Hello there, you're running on tag ${env.BRANCH_NAME}"
             }
         }
     }
