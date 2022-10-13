@@ -6,7 +6,7 @@ pipeline {
         stage('test') {
             steps {
                 checkout scm
-                echo "Hello there, you're running on branch ${sh(returnStdout: true, script: 'git branch --show-current').trim()}"
+                echo "Hello there, you're running on branch ${env.BRANCH_NAME}"
             }
         }
     }
