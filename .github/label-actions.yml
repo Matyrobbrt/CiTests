@@ -2,6 +2,8 @@
 
 # The `spam` label is added to issues, pull requests or discussions
 spam:
+  # Close the issue
+  close: true
   # Lock the thread
   lock: true
   # Set a lock reason
