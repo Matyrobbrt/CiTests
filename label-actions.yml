@@ -1,0 +1,10 @@
+# Configuration for Label Actions - https://github.com/dessant/label-actions
+
+# The `spam` label is added to issues, pull requests or discussions
+spam:
+  # Lock the thread
+  lock: true
+  # Set a lock reason
+  lock-reason: 'spam'
+  # Additionally, add 'Submitterisspecialbunny' label
+  label: 'Submitterisspecialbunny'
